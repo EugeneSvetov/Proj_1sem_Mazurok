@@ -6,7 +6,7 @@ while type(a) != int and type(b) != int and type(c) != int:
     try:
         a, b, c = int(a), int(b), int(c)  # проверка является ли ввод числом
     except ValueError:
-        print('Некорректный формат ввода')  # вывод исключения
+        print('Некорректныйfff формат ввода')  # вывод исключения
         a, b, c = input('Введите первое число '), input('Введите второе число '), input(
             'Введите третье число ')  # повторный ввод при исключении
 if (a >= 0 and b <= 0 and c <= 0) or (a <= 0 and b >= 0 and c <= 0) or (a <= 0 and b <= 0 and c >= 0):
