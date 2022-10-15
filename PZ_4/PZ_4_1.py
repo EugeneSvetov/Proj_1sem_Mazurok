@@ -7,7 +7,7 @@ try:
     while i != n:
         i += 1
         ans += a ** i
-    print(ans + 1) # вывод результата
+    print(ans + 1)  # вывод результата
 except ValueError:
     print('Неверный формат') # вывод исключения
 
