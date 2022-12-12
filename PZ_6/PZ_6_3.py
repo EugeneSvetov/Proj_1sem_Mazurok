@@ -1,5 +1,5 @@
 from random import randint
-n = input('Введите длину списка')
+n = input('Введите длину списка ')
 
 try:
   n = int(n)
@@ -16,6 +16,7 @@ def shift(lst, steps):
     else:
         for i in range(steps):
             lst.insert(0, lst.pop())
+    return lst
 
 print('Ваш список ', nums)
 
