@@ -7,8 +7,8 @@ try:
     a = [randint(0, 11) for i in range(n)]  # генерация списка
     print('Ваш список : ', a)  # вывод списка
     print('Результат')
-    for i in range(n):
-        print(a[i])  # вывод результата
-        print(a[-(i + 1)])  # вывод результата
+    for i in range(n//2):
+        print(a[i], end=' ')  # вывод результата
+        print(a[-(i + 1)], end=' ')  # вывод результата
 except ValueError:
     print("Некорректный ввод")  # вывод исключения
