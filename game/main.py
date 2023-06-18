@@ -43,7 +43,7 @@ class Game:
                     sys.exit()
                 
                 if self.current_scene == self.start_screen:
-                    self.cut_scene.draw()
+                    #self.cut_scene.draw()
                     self.current_scene.draw(self.screen)
                     
                     if self.button.pressed(self.current_scene.play_rect, event):
@@ -91,7 +91,11 @@ class Game:
                         self.current_scene.draw(self.screen)
                         
                 if self.done1 and self.done2 and self.done3:
-                    self.cut_scene.ending()
+                    self.screen.fill('black')
+                    #self.cut_scene.ending()
+                    if event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE:
+                        pygame.quit()
+                        sys.exit()
                 
                         
             pygame.display.update()
